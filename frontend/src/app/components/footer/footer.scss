@@ -1,0 +1,44 @@
+.footer {
+  background-color: var(--navy);
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  .logo-icon {
+    height: 55px;
+    width: auto;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .footer-logo {
+      height: 30px;
+      width: auto;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+
+      li a {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: var(--white);
+        }
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}

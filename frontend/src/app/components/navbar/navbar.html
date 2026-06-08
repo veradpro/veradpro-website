@@ -1,0 +1,25 @@
+<!-- © 2026 VERADPRO Software Solutions. All rights reserved. -->
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="navbar-inner">
+      <a class="navbar-brand" routerLink="/">
+        <img src="assets/images/Veradpro_double_arrow-removebg-preview.png" alt="VERADPRO" class="logo-icon" />
+        <div class="brand-text">
+          <span class="brand-name">veradpro</span>
+          <span class="brand-sub">SOFTWARE SOLUTIONS</span>
+        </div>
+      </a>
+      <div class="hamburger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" [class.open]="menuOpen">
+        <li><a href="#home" (click)="scrollTo('home')">Home</a></li>
+        <li><a href="#services" (click)="scrollTo('services')">Services</a></li>
+        <li><a href="#partners" (click)="scrollTo('partners')">Partners</a></li>
+        <li><a href="#contact" (click)="scrollTo('contact')" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

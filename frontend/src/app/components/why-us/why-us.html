@@ -1,0 +1,18 @@
+<!-- © 2026 VERADPRO Software Solutions. All rights reserved. -->
+<section class="why-us" id="why-us">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Why VERADPRO?</h2>
+      <p class="section-subtitle">Independent, experienced, and committed to quality delivery</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card" *ngFor="let item of reasons">
+        <div class="why-icon">{{ item.icon }}</div>
+        <div class="why-content">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

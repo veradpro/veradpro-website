@@ -1,0 +1,61 @@
+.why-us {
+  background-color: var(--navy);
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .section-title {
+      color: var(--white);
+    }
+
+    .section-subtitle {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .why-card {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      background-color: var(--navy-light);
+      padding: 1.75rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: border-color 0.2s ease;
+
+      &:hover {
+        border-color: rgba(74, 144, 217, 0.4);
+      }
+
+      .why-icon {
+        font-size: 1.8rem;
+        flex-shrink: 0;
+      }
+
+      .why-content {
+        h3 {
+          font-size: 1rem;
+          color: var(--white);
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: rgba(255, 255, 255, 0.6);
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}

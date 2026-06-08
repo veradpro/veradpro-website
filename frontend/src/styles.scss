@@ -1,0 +1,100 @@
+/* VERADPRO Global Styles */
+/* © 2026 VERADPRO Software Solutions. All rights reserved. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --navy: #0d1b2a;
+  --navy-light: #1a2f4a;
+  --navy-mid: #152238;
+  --white: #ffffff;
+  --grey-light: #f4f6f9;
+  --grey-text: #8a9bb0;
+  --accent: #4a90d9;
+  --accent-hover: #357abd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--grey-text);
+  margin-bottom: 3rem;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+
+  &:hover {
+    background-color: var(--accent-hover);
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--white);
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+
+  &:hover {
+    border-color: var(--white);
+    background-color: rgba(255,255,255,0.1);
+  }
+}
+
+section {
+  padding: 5rem 0;
+}
